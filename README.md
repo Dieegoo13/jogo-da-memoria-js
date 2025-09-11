@@ -1,28 +1,54 @@
-# Jogo da Memória 🧠
+<h1 align="center" style="font-weight: bold;">Jogo da Memória 🧠</h1>
 
-Bem-vindo ao **Jogo da Memória**! Este é um simples jogo onde você testa sua memória tentando encontrar pares de cartas iguais.
+<p align="center">
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#como-jogar">Como Jogar</a> • 
+ <a href="#preview">Preview</a> • 
+ <a href="#como-rodar">Como Rodar</a> 
+</p>
 
-## 📋 Sobre o Projeto
+<p align="center">
+    <b>Jogo da Memória – um projeto interativo desenvolvido para fins de estudo, utilizando HTML, CSS e JavaScript.</b>
+</p>
 
-O Jogo da Memória é um projeto interativo desenvolvido com HTML, CSS e JavaScript. O objetivo é encontrar todas as combinações de cartas no menor tempo possível.
+<h2 id="tecnologias">💻 Tecnologias</h2>
 
-### 🕹️ Funcionalidades
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30px" />
+  <span>HTML</span>
+</div>
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30px" />
+  <span>CSS</span>
+</div>
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="30px" />
+  <span>JavaScript</span>
+</div>
 
-- **Sistema de Embaralhamento**: As cartas são embaralhadas a cada nova partida.
-- **Feedback Visual**: As cartas são viradas ao serem clicadas e revelam o conteúdo para que o jogador possa encontrar o par.
-- **Mensagens de Vitória**: O jogo exibe uma mensagem ao usuário quando ele encontra todos os pares de cartas.
+<h2 id="funcionalidades">🕹️ Funcionalidades</h2>
 
-## 🚀 Tecnologias Utilizadas
+- **Sistema de Embaralhamento**: As cartas são embaralhadas a cada nova partida.  
+- **Feedback Visual**: As cartas viram ao serem clicadas, revelando o conteúdo.  
+- **Mensagens de Vitória**: Ao encontrar todos os pares, o jogo exibe uma mensagem de sucesso.  
+- **Contador de Tentativas**: (Opcional) Acompanhe quantas tentativas você levou para completar o jogo.  
 
-- **HTML**: Estrutura das cartas e do tabuleiro.
-- **CSS**: Estilos visuais do jogo, incluindo o efeito de virada das cartas.
-- **JavaScript**: Lógica principal do jogo, como embaralhamento das cartas, manipulação de eventos e verificação de combinações.
+<h2 id="como-jogar">🎮 Como Jogar / Regras</h2>
 
+- Clique em uma carta para virá-la.  
+- Clique em uma segunda carta para tentar encontrar o par correspondente.  
+- Se as cartas combinarem, elas permanecem viradas.  
+- Se não combinarem, elas são viradas novamente.  
+- O objetivo é encontrar todos os pares no menor número de tentativas possível.  
 
-## 📜 Como Jogar
+<h2 id="como-rodar">🚀 Como Rodar</h2>
 
-1. Clique em uma carta para virá-la.
-2. Clique em uma segunda carta para tentar encontrar o par correspondente.
-3. Se as cartas combinarem, elas permanecem viradas.
-4. Se não combinarem, elas são viradas novamente.
-5. O objetivo é encontrar todos os pares no menor número de tentativas possível.
+1️⃣ Clone o repositório:
+```bash
+git clone https://github.com/Dieegoo13/jogo-da-memoria.git
+```
+
+<h2 id="preview">📸 Preview do Projeto</h2>
+
+![Tela inicial](./assets/HomePageMeet.png)  
