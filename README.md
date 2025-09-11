@@ -51,4 +51,4 @@ git clone https://github.com/Dieegoo13/jogo-da-memoria.git
 
 <h2 id="preview">📸 Preview do Projeto</h2>
 
-![Tela inicial](./assets/HomePageMeet.png)  
+![Tela inicial](./src/img/HomePageMemoria.png)  
