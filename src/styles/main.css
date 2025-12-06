@@ -1,10 +1,11 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #fc1e8a;
     user-select: none;
+    padding: 20px;
 }
 
 .container {
@@ -12,22 +13,27 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
     padding: 40px 60px;
+    border-radius: 20px;
+    max-width: 100%;
 }
 
-h2{
+h2 {
     font-size: 3em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 .reset {
     padding: 15px 20px;
     width: 100%;
+    max-width: 430px;
     color: #000;
     background-color: #fff;
     border: none;
@@ -36,6 +42,12 @@ h2{
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 600;
+    transition: all 0.3s;
+}
+
+.reset:hover {
+    background-color: #ec38bc;
+    color: #fff;
 }
 
 .reset:focus {
@@ -50,6 +62,7 @@ h2{
     flex-wrap: wrap;
     gap: 10px;
     transform-style: preserve-3d;
+    max-width: 100%;
 }
 
 .item {
@@ -63,9 +76,10 @@ h2{
     font-size: 3rem;
     transform: rotateY(180deg);
     transition: 0.25s;
+    cursor: pointer;
 }
 
-.item::after{
+.item::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -80,6 +94,96 @@ h2{
 }
 
 .boxOpen::after,
-boxMatch::after{
+.boxMatch::after {
     transform: rotateY(180deg);
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 40px;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .game {
+        width: 350px;
+        height: 350px;
+        gap: 8px;
+    }
+
+    .item {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    .reset {
+        font-size: 1.3em;
+        padding: 12px 18px;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        letter-spacing: 0.05em;
+    }
+
+    .game {
+        width: 280px;
+        height: 280px;
+        gap: 5px;
+    }
+
+    .item {
+        width: 65px;
+        height: 65px;
+        font-size: 2rem;
+    }
+
+    .reset {
+        font-size: 1em;
+        padding: 10px 15px;
+        letter-spacing: 0.05em;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 360px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .game {
+        width: 240px;
+        height: 240px;
+        gap: 4px;
+    }
+
+    .item {
+        width: 55px;
+        height: 55px;
+        font-size: 1.5rem;
+    }
+
+    .reset {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
 }
